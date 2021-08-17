@@ -1,0 +1,4 @@
+ApiProject/**/migrations/
+ApiProject/**/__pycache__/
+my-app/node_modules/
+env/
