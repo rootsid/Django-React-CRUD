@@ -40,6 +40,8 @@ class ArticleList(APIView):
 
 
 class ArticleDetails(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
 
     def get_object(self, id):
         try:
