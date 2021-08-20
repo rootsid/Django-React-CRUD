@@ -74,6 +74,8 @@ class ArticleDetails(APIView):
 
 
 class UserRegisteration(APIView):
+    authentication_classes = []
+    permission_classes = []
 
     def get(self, request):
         users = User.objects.all()
